@@ -6,7 +6,7 @@ import 'package:trip_planner/core/presentaion/blocs/app%20status/app_status_cubi
 import 'package:trip_planner/core/presentaion/blocs/app%20status/app_status_state.dart';
 import 'package:trip_planner/core/presentaion/screens/onboarding_screen.dart';
 import 'package:trip_planner/core/presentaion/shell/app_shell.dart';
-import 'package:trip_planner/core/service_locator.dart';
+import 'package:trip_planner/core/di/service_locator.dart';
 
 class InitialScreen extends StatelessWidget {
   const InitialScreen({super.key});

@@ -48,4 +48,9 @@ class ExchangeRateRepositoryImpl implements ExchangeRateRepository {
       return ExchangeRateEntity(baseCurrency: '', rates: {});
     }
   }
+
+  @override
+  Future<void> clearAll() {
+    return _localDataSource.clearAll();
+  }
 }

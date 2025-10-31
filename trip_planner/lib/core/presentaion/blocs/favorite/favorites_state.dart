@@ -1,7 +1,7 @@
 // lib/presentation/favorites/bloc/favorites_screen_state.dart
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
-import 'package:trip_planner/core/domain/entities/destination_entity.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
+import 'package:trip_planner/features/destination/domain/entities/destination_entity.dart';
 
 part 'favorites_state.freezed.dart';
 

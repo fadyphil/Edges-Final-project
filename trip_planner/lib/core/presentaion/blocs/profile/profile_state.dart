@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:trip_planner/core/domain/entities/app_statistics._entity.dart';
 
 import 'package:trip_planner/core/domain/entities/user_profile_entity.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
 
 part 'profile_state.freezed.dart';
 

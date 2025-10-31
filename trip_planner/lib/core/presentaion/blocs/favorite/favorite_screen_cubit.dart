@@ -1,10 +1,9 @@
 // lib/presentation/favorites/bloc/favorites_screen_cubit.dart
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
-// --- CORRECTED IMPORTS ---
-import 'package:trip_planner/core/domain/usecases/destination%20use%20cases/get_destinations_by_ids_use_case.dart';
 import 'package:trip_planner/core/domain/usecases/favorite%20use%20cases/get_favorites_ids_use_case.dart';
 import 'package:trip_planner/core/presentaion/blocs/favorite/favorites_state.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
+import 'package:trip_planner/features/destination/domain/usecases/get_destinations_by_ids_use_case.dart';
 
 class FavoritesScreenCubit extends Cubit<FavoritesScreenState> {
   // --- CORRECT DEPENDENCIES ---

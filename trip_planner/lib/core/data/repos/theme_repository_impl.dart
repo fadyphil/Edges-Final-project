@@ -16,4 +16,9 @@ class ThemeRepositoryImpl implements ThemeRepository {
   Future<void> saveThemeMode(ThemeMode themeMode) {
     return _themeLocalDataSource.saveThemeMode(themeMode);
   }
+
+  @override
+  Future<void> clearAll() {
+    return _themeLocalDataSource.clearAll();
+  }
 }

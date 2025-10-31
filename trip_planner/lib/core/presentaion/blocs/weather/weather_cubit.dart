@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
 import 'package:trip_planner/core/domain/entities/weather_entity.dart';
 import 'package:trip_planner/core/domain/usecases/weather%20use%20%20cases/get_weather_use_case.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
 
 class WeatherCubit extends Cubit<ApiState<Weather>> {
   final GetWeatherUseCase getWeatherUseCase;

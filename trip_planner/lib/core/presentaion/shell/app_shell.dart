@@ -1,9 +1,9 @@
 // lib/presentation/shell/app_shell.dart
 import 'package:flutter/material.dart';
-import 'package:trip_planner/core/presentaion/screens/explore_screen.dart';
 import 'package:trip_planner/core/presentaion/screens/favorite_destinations_screen.dart';
 import 'package:trip_planner/core/presentaion/screens/my_trip_screen.dart';
 import 'package:trip_planner/core/presentaion/screens/profile_screen.dart';
+import 'package:trip_planner/features/destination/presentation/screens/explore_screen.dart';
 
 class AppShell extends StatefulWidget {
   const AppShell({super.key});

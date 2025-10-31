@@ -1,10 +1,10 @@
 // lib/presentation/my_trips/my_trips_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
-import 'package:trip_planner/core/presentaion/blocs/my%20trips/my_trips_cubit.dart';
-import 'package:trip_planner/core/presentaion/blocs/my%20trips/my_trips_state.dart';
-import 'package:trip_planner/core/presentaion/widgets/trip_card.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
+import 'package:trip_planner/features/trip/presentation/blocs/my_trips_cubit.dart';
+import 'package:trip_planner/features/trip/presentation/blocs/my_trips_state.dart';
+import 'package:trip_planner/features/trip/presentation/widgets/trip_card.dart';
 
 class MyTripsScreen extends StatelessWidget {
   const MyTripsScreen({super.key});

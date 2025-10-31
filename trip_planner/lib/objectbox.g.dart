@@ -13,11 +13,10 @@ import 'package:objectbox/internal.dart'
     as obx_int; // generated code can access "internal" functionality
 import 'package:objectbox/objectbox.dart' as obx;
 import 'package:objectbox_flutter_libs/objectbox_flutter_libs.dart';
-
-import 'core/data/local/destinations/destination_db_entity.dart';
-import 'core/data/local/expenses/expense_db_entity.dart';
-import 'core/data/local/favorites/favorite_db_entity.dart';
-import 'core/data/local/trips/trip_db_entity.dart';
+import 'package:trip_planner/core/data/local/favorites/favorite_db_entity.dart';
+import 'package:trip_planner/features/destination/data/local/destination_db_entity.dart';
+import 'package:trip_planner/features/trip/data/local/expense_db_entity.dart';
+import 'package:trip_planner/features/trip/data/local/trip_db_entity.dart';
 
 export 'package:objectbox/objectbox.dart'; // so that callers only have to import this file
 

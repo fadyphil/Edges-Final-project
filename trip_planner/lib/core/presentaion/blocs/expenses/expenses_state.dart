@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:trip_planner/core/domain/entities/expense_entity.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
+import 'package:trip_planner/features/trip/domain/entities/expense_entity.dart';
 
 part 'expenses_state.freezed.dart';
 

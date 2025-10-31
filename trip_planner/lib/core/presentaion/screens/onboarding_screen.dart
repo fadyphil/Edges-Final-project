@@ -2,14 +2,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'; // Add this package
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
 import 'package:trip_planner/core/presentaion/blocs/onboarding/onboarding_cubit.dart';
 import 'package:trip_planner/core/presentaion/blocs/onboarding/onboarding_state.dart';
 import 'package:trip_planner/core/presentaion/screens/initial_screen.dart';
 import 'package:trip_planner/core/presentaion/widgets/onboarding%20%20screens/onboarding_step_1.dart';
 import 'package:trip_planner/core/presentaion/widgets/onboarding%20%20screens/onboarding_step_2.dart';
 import 'package:trip_planner/core/presentaion/widgets/onboarding%20%20screens/onboarding_step_3.dart';
-import 'package:trip_planner/core/service_locator.dart';
+import 'package:trip_planner/core/di/service_locator.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});

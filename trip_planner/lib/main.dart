@@ -3,14 +3,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:trip_planner/core/presentaion/auth_gate/auth_gate.dart';
 import 'package:trip_planner/core/presentaion/blocs/app%20status/app_status_cubit.dart';
-import 'package:trip_planner/core/presentaion/blocs/destination%20image%20urls/destination_image_urls_cubit.dart';
-import 'package:trip_planner/core/presentaion/blocs/explore/explore_cubit.dart';
-import 'package:trip_planner/core/presentaion/blocs/favorite/favorites_cubit.dart';
-import 'package:trip_planner/core/presentaion/blocs/my%20trips/my_trips_cubit.dart';
 import 'package:trip_planner/core/presentaion/blocs/profile/profile_cubit.dart';
 import 'package:trip_planner/core/presentaion/blocs/theme%20cubit/theme_cubit.dart';
 
-import 'package:trip_planner/core/service_locator.dart' as di;
+import 'package:trip_planner/core/di/service_locator.dart' as di;
+import 'package:trip_planner/features/destination/presentation/blocs/destination_image_urls_cubit.dart';
+import 'package:trip_planner/features/destination/presentation/blocs/explore_cubit.dart';
+import 'package:trip_planner/features/favorites/presentation/blocs/favorites_cubit.dart';
+import 'package:trip_planner/features/trip/presentation/blocs/my_trips_cubit.dart';
 import 'package:trip_planner/theme/theme.dart';
 
 void main() async {

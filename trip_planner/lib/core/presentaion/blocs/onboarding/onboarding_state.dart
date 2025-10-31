@@ -1,6 +1,6 @@
 // lib/presentation/onboarding/bloc/onboarding_state.dart
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
 
 part 'onboarding_state.freezed.dart';
 

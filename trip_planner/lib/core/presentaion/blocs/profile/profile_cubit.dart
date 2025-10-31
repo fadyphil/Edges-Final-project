@@ -6,11 +6,10 @@ import 'package:trip_planner/core/domain/usecases/user%20profile%20use%20cases/c
 import 'package:trip_planner/core/domain/usecases/user%20profile%20use%20cases/get_app_statistics_use_case.dart';
 import 'package:trip_planner/core/domain/usecases/user%20profile/get_user_profile_use_case.dart';
 import 'package:trip_planner/core/domain/usecases/user%20profile/update_user_profile_use_case.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
 import 'package:trip_planner/core/presentaion/blocs/app%20status/app_status_cubit.dart';
-import 'package:trip_planner/core/presentaion/blocs/favorite/favorites_cubit.dart';
-import 'package:trip_planner/core/presentaion/blocs/my%20trips/my_trips_cubit.dart';
-
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
+import 'package:trip_planner/features/favorites/presentation/blocs/favorites_cubit.dart';
+import 'package:trip_planner/features/trip/presentation/blocs/my_trips_cubit.dart';
 import './profile_state.dart';
 
 class ProfileCubit extends Cubit<ProfileState> {
@@ -91,6 +90,7 @@ class ProfileCubit extends Cubit<ProfileState> {
 
       // After clearing, reload the screen to show the empty state.
       _appStatusCubit.dataCleared();
+      emit(state.copyWith(actionState: const ApiState.initial()));
     } catch (e) {
       emit(state.copyWith(actionState: ApiState.error(message: e.toString())));
     }

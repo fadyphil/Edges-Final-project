@@ -19,4 +19,8 @@ class ThemeLocalDataSource {
   Future<void> saveThemeMode(ThemeMode themeMode) async {
     await _prefs.setString('themeMode', themeMode.toString());
   }
+
+  Future<void> clearAll() async {
+    await _prefs.remove('themeMode');
+  }
 }

@@ -2,15 +2,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:trip_planner/core/domain/entities/destination_entity.dart';
-import 'package:trip_planner/core/domain/entities/trip_entity.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
-import 'package:trip_planner/core/presentaion/blocs/my%20trips/my_trips_cubit.dart';
-import 'package:trip_planner/core/presentaion/blocs/my%20trips/my_trips_state.dart';
-import 'package:trip_planner/core/presentaion/widgets/add_expense_dialog.dart';
-import 'package:trip_planner/core/presentaion/widgets/pie_chart.dart';
-import 'package:trip_planner/core/presentaion/widgets/trip_card.dart';
-import 'package:trip_planner/core/presentaion/widgets/weather_card.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
+import 'package:trip_planner/features/destination/domain/entities/destination_entity.dart';
+import 'package:trip_planner/features/trip/domain/entities/trip_entity.dart';
+import 'package:trip_planner/features/trip/presentation/blocs/my_trips_cubit.dart';
+import 'package:trip_planner/features/trip/presentation/blocs/my_trips_state.dart';
+import 'package:trip_planner/features/trip/presentation/widgets/add_expense_dialog.dart';
+import 'package:trip_planner/features/trip/presentation/widgets/pie_chart.dart';
+import 'package:trip_planner/features/trip/presentation/widgets/trip_card.dart';
+import 'package:trip_planner/features/weather/presentation/widgets/weather_card.dart';
 
 class TripDetailsScreen extends StatelessWidget {
   final String tripId;

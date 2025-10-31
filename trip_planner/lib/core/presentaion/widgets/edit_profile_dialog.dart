@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:trip_planner/core/domain/entities/user_profile_entity.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
 import 'package:trip_planner/core/presentaion/blocs/profile/profile_cubit.dart';
 import 'package:trip_planner/core/presentaion/blocs/profile/profile_state.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
 
 class EditProfileDialog extends StatefulWidget {
   final UserProfile initialProfile;

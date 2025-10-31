@@ -1,13 +1,13 @@
 // lib/presentation/favorites/favorites_screen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
-import 'package:trip_planner/core/domain/entities/destination_entity.dart';
 import 'package:trip_planner/core/presentaion/blocs/favorite/favorite_screen_cubit.dart';
-import 'package:trip_planner/core/presentaion/blocs/favorite/favorites_cubit.dart';
 import 'package:trip_planner/core/presentaion/blocs/favorite/favorites_state.dart';
-import 'package:trip_planner/core/presentaion/screens/destination_details_screen.dart';
-import 'package:trip_planner/core/service_locator.dart';
+import 'package:trip_planner/core/di/service_locator.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
+import 'package:trip_planner/features/destination/domain/entities/destination_entity.dart';
+import 'package:trip_planner/features/destination/presentation/screens/destination_details_screen.dart';
+import 'package:trip_planner/features/favorites/presentation/blocs/favorites_cubit.dart';
 
 class FavoritesScreen extends StatelessWidget {
   const FavoritesScreen({super.key});

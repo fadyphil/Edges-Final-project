@@ -3,7 +3,7 @@ import 'dart:developer';
 
 import 'package:trip_planner/core/domain/entities/app_statistics._entity.dart';
 import 'package:trip_planner/core/domain/repo/favorites_repository.dart';
-import 'package:trip_planner/core/domain/repo/trip_repository.dart';
+import 'package:trip_planner/features/trip/domain/repos/trip_repository.dart';
 
 class GetAppStatisticsUseCase {
   final TripRepository _tripRepository;

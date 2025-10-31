@@ -7,6 +7,7 @@ import 'package:trip_planner/core/data/models/exchange_rate_dto.dart';
 abstract class ExhangeRateLocalDateSource {
   Future<void> cacheExchangeRates(ExchangeRatesModel exchangeRates);
   Future<ExchangeRatesModel?> getCachedExchangeRates(String baseCurrency);
+  Future<void> clearAll();
 }
 
 class ExhangeRateLocalDateSourceImpl implements ExhangeRateLocalDateSource {
@@ -55,6 +56,24 @@ class ExhangeRateLocalDateSourceImpl implements ExhangeRateLocalDateSource {
     } catch (e) {
       log(' iddk', error: e, stackTrace: StackTrace.current);
       return null;
+    }
+  }
+
+  @override
+  Future<void> clearAll() async {
+    try {
+      final keys = _prefs.getKeys();
+      for (final key in keys) {
+        if (key.startsWith('cached_exchange_rates_')) {
+          await _prefs.remove(key);
+        }
+      }
+    } catch (e) {
+      log(
+        'Error clearing exchange rates: $e',
+        error: e,
+        stackTrace: StackTrace.current,
+      );
     }
   }
 }

@@ -1,8 +1,8 @@
 // lib/presentation/onboarding/bloc/onboarding_cubit.dart
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:trip_planner/core/presentaion/blocs/api%20states/api_state.dart';
 import 'package:trip_planner/core/domain/entities/user_profile_entity.dart';
 import 'package:trip_planner/core/domain/usecases/user%20profile/save_user_profile_use_case.dart';
+import 'package:trip_planner/core/presentation/blocs/api_states/api_state.dart';
 import './onboarding_state.dart';
 
 class OnboardingCubit extends Cubit<OnboardingState> {
