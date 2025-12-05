@@ -289,7 +289,7 @@ class _DestinationDetailsView extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Row(
+      child: Wrap(
         children: [
           Icon(icon, color: Theme.of(context).colorScheme.secondary, size: 24),
           const SizedBox(width: 8),
