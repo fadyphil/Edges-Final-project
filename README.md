@@ -92,7 +92,7 @@ lib/
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/trip-planner.git
+    git clone https://github.com/fadyphil/trip-planner.git
     cd trip-planner/trip_planner
     ```
 
